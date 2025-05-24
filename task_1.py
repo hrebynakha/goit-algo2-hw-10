@@ -88,7 +88,7 @@ def show_time_graph(results: list[tuple[int, float, float]]) -> None:
 
 def main() -> None:
     """Main function"""
-    sizes = [10000, 50000, 100000, 200000]
+    sizes = [10000, 50000, 100000, 500000]
     results = []
     for size in sizes:
         print(f"Розмір масиву: {size}")
