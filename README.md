@@ -69,7 +69,12 @@ def create_schedule(subjects, teachers):
         subjects = best_teacher.can_teach_subjects & unassigned_subjects
         best_teacher.assign_subject(subjects)
         schedule.append(best_teacher)
+
+    return schedule
 ```
+в процесі циклу додаємо предмети до викладача та до розкладу, користуємося методом **assign_subject**.
+
+В результаті повертаємо заповнений масив розкладу з викладачами та предметами, які вони викладають.
 
 ### Result
 
